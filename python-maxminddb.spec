@@ -3,13 +3,13 @@
 %bcond_without	doc		# don't build doc
 %bcond_with	tests	# do not perform "make test"
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with		python3 # CPython 3.x module
 
 %define 	module	maxminddb
 Summary:	Python extension for reading the MaxMind DB format
 Name:		python-%{module}
 Version:	1.1.1
-Release:	15
+Release:	16
 License:	APL
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/m/maxminddb/maxminddb-%{version}.tar.gz
